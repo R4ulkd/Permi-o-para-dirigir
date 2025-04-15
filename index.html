@@ -4,26 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Permissão para dirigir</title>
+    <title>Aprovação de alunos</title>
 </head>
 <body>
     <center>
-        <h1>Permissão para dirigir
-
-            <script>
-                var idade = parseInt(prompt("Digite sua idade"))
-
-                var carteira = prompt ("Você tem carteira de motorista? (S): SIM; (N) NÃO")
-
-                //IF ELSE - Condição
-                if (idade >= "18" && carteira == "S") {
-                    document.write ("Você pode dirigir")
-
-                } else {
-                    alert ("Você não pode dirigir")
-                }
-            </script>
-        </h1>
+        <h1> Média do aluno</h1>
+        <script>
+            var nota1 = parseInt(prompt("Digite a primeira nota"))
+            var nota2 = parseInt(prompt("Digite a segunda nota"))
+            var nota3 = parseInt(prompt("Digite a terceira nota"))
+            var nota4 = parseInt(prompt("Digite a quarta nota"))
+            var media = parseInt(nota1 + nota2 + nota3 + nota4) / 4
+            if (media >=7){
+               document.write("Aluno APROVADO - " + "A media foi:" + media) 
+        } else {
+            document.write("Aluno REPROVADO - " + "A media foi: " + media)
+        }
+        </script>
     </center>
     
 </body>
